@@ -1,13 +1,43 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
+// Prisma Schema for Udyam Registration Portal
+// Learn more: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
+}
+
+// ── Submission ──────────────────────────────────────────────────────────────
+// Stores a complete two-step registration attempt.
+
+model Submission {
+  id               String           @id @default(cuid())
+  aadhaarNumber    String
+  aadhaarName      String
+  otpVerified      Boolean          @default(false)
+  organisationType OrganisationType
+  panNumber        String
+  panHolderName    String
+  dobOrDoi         String           // Stored as "YYYY-MM-DD" string for flexibility
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  @@map("submissions")
+}
+
+// ── Enums ───────────────────────────────────────────────────────────────────
+
+enum OrganisationType {
+  PROPRIETORSHIP
+  PARTNERSHIP
+  HUF
+  PRIVATE_LIMITED
+  PUBLIC_LIMITED
+  LLP
+  CO_OPERATIVE
+  SELF_HELP_GROUP
+  OTHER
 }
