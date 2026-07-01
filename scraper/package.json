@@ -1,17 +1,24 @@
 {
-  "name": "scraper",
+  "name": "udyam-scraper",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Puppeteer scraper for Udyam Registration Portal form schema extraction",
+  "main": "dist/scraper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scrape": "ts-node src/scraper.ts",
+    "build": "tsc",
+    "start": "node dist/scraper.js"
   },
-  "keywords": [],
+  "keywords": ["scraper", "puppeteer", "udyam"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "cheerio": "^1.2.0",
     "puppeteer": "^25.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
   }
 }
