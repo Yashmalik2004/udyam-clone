@@ -48,6 +48,7 @@ export interface GenerateOtpResult {
   referenceId: string;
   maskedMobile: string;
   expiresInMinutes: number;
+  otp?: string;
 }
 
 export interface VerifyOtpResult {

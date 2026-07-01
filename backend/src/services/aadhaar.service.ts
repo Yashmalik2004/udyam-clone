@@ -40,7 +40,7 @@ export const generateAadhaarOtp = async (
   // MOCK: Simulate async API delay
   await simulateDelay(300);
 
-  const { referenceId } = generateOtp(
+  const { referenceId, otp } = generateOtp(
     aadhaarNumber,
     getEnv().OTP_EXPIRY_MINUTES
   );
@@ -49,6 +49,7 @@ export const generateAadhaarOtp = async (
     referenceId,
     maskedMobile: MOCK_MASKED_MOBILE,
     expiresInMinutes: getEnv().OTP_EXPIRY_MINUTES,
+    otp,
   };
 };
 
