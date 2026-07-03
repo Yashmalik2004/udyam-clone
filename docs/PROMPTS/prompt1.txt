@@ -1,0 +1,195 @@
+You are a Senior Backend Engineer and Software Architect.
+
+Continue working inside my existing project.
+
+The folders already exist.
+
+backend/
+frontend/
+scraper/
+docs/
+
+DO NOT recreate the project.
+
+====================================================
+GOAL
+====================================================
+
+Build ONLY the backend foundation.
+
+Focus only on architecture.
+
+Do NOT implement scraper.
+
+Do NOT implement frontend.
+
+Do NOT implement business logic.
+
+====================================================
+TECH STACK
+====================================================
+
+Node.js
+Express
+TypeScript
+Prisma
+Supabase PostgreSQL
+Zod
+Winston
+Helmet
+Morgan
+Cors
+dotenv
+
+====================================================
+BACKEND STRUCTURE
+====================================================
+
+Create/update the backend into this structure.
+
+src/
+
+app.ts
+
+server.ts
+
+config/
+
+routes/
+
+controllers/
+
+services/
+
+middlewares/
+
+schemas/
+
+validators/
+
+logger/
+
+utils/
+
+types/
+
+constants/
+
+====================================================
+DATABASE
+====================================================
+
+Configure Prisma with Supabase.
+
+Create schema.prisma.
+
+Create Submission model.
+
+Submission
+
+id
+
+aadhaarNumber
+
+aadhaarName
+
+otpVerified
+
+organisationType
+
+panNumber
+
+panHolderName
+
+dobOrDoi
+
+createdAt
+
+updatedAt
+
+Use cuid().
+
+Generate migration-ready schema.
+
+====================================================
+API
+====================================================
+
+Create empty routes only.
+
+GET /schema
+
+POST /aadhaar/generate-otp
+
+POST /aadhaar/verify-otp
+
+POST /pan/validate
+
+POST /submit
+
+Return mock JSON.
+
+====================================================
+VALIDATION
+====================================================
+
+Use Zod.
+
+Create reusable validation schemas.
+
+Aadhaar
+
+OTP
+
+PAN
+
+====================================================
+ERROR HANDLING
+====================================================
+
+Implement
+
+Global Error Middleware
+
+404 Middleware
+
+Request Logger
+
+Validation Middleware
+
+====================================================
+LOGGER
+====================================================
+
+Use Winston.
+
+Console logging in production.
+
+File logging only in development.
+
+====================================================
+ENV
+====================================================
+
+Generate
+
+.env.example
+
+Generate
+
+.env
+
+with placeholders only.
+
+====================================================
+IMPORTANT
+
+The project must compile successfully.
+
+No business logic.
+
+No scraper.
+
+No frontend.
+
+Leave TODOs where future logic will go.

@@ -90,7 +90,7 @@ OTP_EXPIRY_MINUTES=5
 # Winston Logs Configuration
 LOG_LEVEL="info"
 
-# Frontend URL (CORS verification)
+# Frontend URL (optional; mainly for cross-origin local development)
 FRONTEND_URL="http://localhost:5173"
 ```
 

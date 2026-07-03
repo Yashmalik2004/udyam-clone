@@ -1,0 +1,69 @@
+Continue from the current project.
+
+Do NOT recreate previous files.
+
+====================================================
+
+Implement the dynamic form engine.
+
+The frontend must never hardcode fields.
+
+====================================================
+
+Backend
+
+GET /schema
+
+returns schema.json.
+
+====================================================
+
+Frontend
+
+GET /schema
+
+↓
+
+Parse JSON
+
+↓
+
+Generate React Hook Form dynamically
+
+↓
+
+Attach Zod validation dynamically
+
+====================================================
+
+Create reusable field renderer.
+
+Support
+
+Text
+
+Number
+
+Date
+
+Select
+
+Button
+
+====================================================
+
+Dynamic validation
+
+required
+
+regex
+
+minLength
+
+maxLength
+
+====================================================
+
+Do not implement scraper yet.
+
+Use static schema.json for now.

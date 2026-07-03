@@ -1,0 +1,79 @@
+Continue from the current project.
+
+Everything already exists.
+
+====================================================
+
+Implement integration.
+
+====================================================
+
+Backend
+
+Read scraper output.
+
+Serve GET /schema.
+
+Implement fake OTP service.
+
+Generate random OTP.
+
+Store in memory.
+
+Expire after configurable duration.
+
+Log OTP using Winston.
+
+====================================================
+
+Implement
+
+POST /aadhaar/generate-otp
+
+POST /aadhaar/verify-otp
+
+POST /pan/validate
+
+POST /submit
+
+====================================================
+
+Store submissions in Supabase using Prisma.
+
+====================================================
+
+Frontend
+
+Wire all pages.
+
+Call backend.
+
+Navigate between steps.
+
+Show validation messages.
+
+Prevent step skipping.
+
+====================================================
+
+Generate production README.
+
+Include
+
+Architecture
+
+Folder explanation
+
+API
+
+Prisma commands
+
+Supabase setup
+
+Environment variables
+
+Run commands
+
+Future improvements.
+
+Everything should compile successfully.

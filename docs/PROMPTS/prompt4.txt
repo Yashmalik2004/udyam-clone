@@ -1,0 +1,73 @@
+Continue from the current project.
+
+Do not modify frontend.
+
+Do not modify backend except where necessary.
+
+====================================================
+
+Implement scraper.
+
+====================================================
+
+Use Puppeteer.
+
+Structure
+
+scraper/
+
+src/
+
+scraper.ts
+
+parser.ts
+
+extractors/
+
+utils/
+
+output/
+
+schema.json
+
+====================================================
+
+Responsibilities
+
+Open Udyam Registration website.
+
+Extract
+
+labels
+
+placeholders
+
+buttons
+
+input names
+
+validation attributes
+
+required fields
+
+Generate
+
+schema.json
+
+====================================================
+
+Create
+
+npm run scrape
+
+====================================================
+
+Do not scrape personal information.
+
+Do not submit forms.
+
+Do not bypass OTP.
+
+Only extract page structure.
+
+Generate clean JSON suitable for backend /schema endpoint.

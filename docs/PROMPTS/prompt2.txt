@@ -1,0 +1,121 @@
+Continue from the existing project.
+
+The backend already exists.
+
+Do NOT modify backend architecture unless required.
+
+====================================================
+
+Build the React frontend only.
+
+====================================================
+
+Tech
+
+React
+
+TypeScript
+
+Vite
+
+TailwindCSS
+
+React Router
+
+React Hook Form
+
+Axios
+
+Zod
+
+====================================================
+
+Structure
+
+src/
+
+components/
+
+pages/
+
+layouts/
+
+routes/
+
+hooks/
+
+services/
+
+types/
+
+utils/
+
+====================================================
+
+Create pages
+
+Home
+
+StepOne
+
+StepTwo
+
+Success
+
+====================================================
+
+Routing
+
+/
+
+/step-one
+
+/step-two
+
+/success
+
+====================================================
+
+Forms
+
+Do NOT hardcode forms.
+
+Instead create reusable components
+
+TextInput
+
+SelectInput
+
+Button
+
+ErrorMessage
+
+FormContainer
+
+====================================================
+
+API
+
+Create Axios client.
+
+Create service methods
+
+getSchema()
+
+generateOtp()
+
+verifyOtp()
+
+validatePan()
+
+submit()
+
+====================================================
+
+Use mock backend responses.
+
+Do not implement scraper.
+
+Do not implement business logic.
+
+Everything should compile.
